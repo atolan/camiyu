@@ -1,0 +1,157 @@
+.navigation-menu.pc ul li.menu-access::after {
+    width: 100%;
+    transition: 0.3s;
+}
+.access-content {
+    padding-bottom: 3em;
+}
+.location-box {
+    background-color: white;
+    margin: 2em auto;
+    border: 1px solid #9D0A0F;
+}
+.location-part {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -moz-box-align: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+.location-part:last-child {
+    border-top: 1px solid #9D0A0F;
+}
+.location-title {
+    font-size: 30px;
+    color: #9D0A0F;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin: 0.5em;
+    width: 8em;
+    text-align: center;
+}
+.location-text {
+    margin: 1.5em 0;
+    line-height: 2em;
+    padding: 0 1.5em;
+    letter-spacing: -1px;
+    border-left: 1px solid #9D0A0F;
+    width: calc(100% - 8em);
+}
+.map-flex {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -moz-box-align: center;
+    align-items: center;
+    margin-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+.map-view {
+    border: 1px solid #9D0A0F;
+    color: #9D0A0F;
+    background-color: white;
+    width: 140px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.map-view:hover, .map-view:active {
+    border: 1px solid white;
+    background-color: #9D0A0E;
+    color: white;
+}
+.google-map {
+    padding-bottom: 2em;
+    margin: auto;
+    width: 1040px;
+}
+.google-map iframe {
+    height: 550px;
+    width: 100%;
+    margin: auto;
+}
+.disup500 {
+    display: block;
+}
+.disdown500 {
+    display: none;
+}
+@media (max-width: 1280px) {
+    .location-title {
+        margin: 0;
+        font-size: 24px;
+    }
+    .google-map iframe {
+        height: 50vw;
+        width: 100%;
+    }
+}
+@media (max-width: 1040px) {
+    .google-map {
+        width: 100%;
+    }
+}
+@media (max-width: 993px) {
+    .map-flex {
+        margin-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    .map-view {
+        font-size: 16px;
+    }
+}
+@media (max-width: 769px) {
+    .map-view {
+        font-size: 14px;
+        width: 100px;
+        padding: 5px;
+    }
+    .google-map {
+        padding-bottom: 1em;
+    }
+    .location-box {
+        margin: 1em auto;
+    }
+    .location-title {
+        width: 120px;
+        font-size: 20px;
+    }
+    .location-text {
+        font-size: 14px;
+        padding: 0 1em;
+        line-height: 1.5em;
+        width: calc(100% - 120px);
+    }
+}
+@media (max-width: 500px) {
+    .location-title {
+        font-size: 18px;
+        width: 100px;
+    }
+    .location-text {
+        width: calc(100% - 100px);
+    }
+    .access-content {
+        padding-bottom: 1em;
+    }
+    .disup500 {
+        display: none;
+    }
+    .disdown500 {
+        display: block;
+    }
+    .map-flex {
+        margin-top: 1em;
+    }
+}
